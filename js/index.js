@@ -1,0 +1,1 @@
+document.getElementById('loaded').innerHTML = (new Date()).toLocaleTimeString();

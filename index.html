@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/index.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script async src="js/index-xhr-html.js"></script>
+    <script async src="js/index-form.js"></script>
+    <script async src="js/index-xhr-json.js"></script>
+    <script async src="js/index-fetch.js"></script>
+    <script async src="js/index.js"></script>
+    <title>AJAX</title>
+</head>
+<body>
+    <section>
+        <h1>XHR Simple</h1>
+        <div id="root"></div>
+        <button id="get-content">Get Content</button>
+    </section>
+    <section>
+        <h1>XHR JSON</h1>
+        <div>
+            <p>Client name: <span id="client-name"></span></p>
+            <p>Client account balance: <span id="client-balance"></span></p>
+            <button id="get-client">Get Client Data</button>
+            <button id="get-fetch">Get Fetch Data</button>
+        </div>
+    </section>
+    
+    <section>
+        <h1>Form</h1>
+        <div id="message-cont"></div>
+        <form class="client-balance">
+            <label>Client Name: 
+                <input type="text" id="form-name" required/>
+            </label>
+            <label>Acount balance
+                <input type="number" id="form-balance"/>
+            </label>
+            <input type="submit" value="update"/>
+            <input type="reset"/>
+        </form>
+    </section>
+    
+    <p>Page loaded: <span id="loaded"></span></p>
+</body>
+</html>
